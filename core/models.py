@@ -15,3 +15,7 @@ class Evento(models.Model): # Classe que representa uma tabela no banco de dados
     def __str__(self):
         return self.titulo
 
+    def get_data_evento(self):
+        return self.data_evento.strftime('%d/%m/%Y - %H:%M h')
+
+
